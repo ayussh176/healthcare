@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { db } from "@/lib/firebase";
-import { doc, getDoc } from "firebase/firestore";
 import Sidebar from "@/components/Sidebar";
 import { Bell, UserCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
