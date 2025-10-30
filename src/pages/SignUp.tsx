@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
-import { db } from "@/lib/firebase";
-import { doc, setDoc } from "firebase/firestore";
+
 
 const SignUp = () => {
   const [username, setUsername] = useState(""); // any input accepted

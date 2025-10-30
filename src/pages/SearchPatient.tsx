@@ -5,17 +5,7 @@ import { Bell, UserCircle, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
-import { db } from "@/lib/firebase";
-import {
-  collection,
-  query,
-  where,
-  getDocs,
-  onSnapshot,
-  doc,
-  updateDoc,
-  getDoc,
-} from "firebase/firestore";
+
 
 const SearchPatient = () => {
   const { currentUser, logout } = useAuth();

@@ -1,16 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import {
-  auth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
-} from "@/lib/firebase";
-import {
-  User,
-  setPersistence,
-  browserLocalPersistence,
-} from "firebase/auth";
+
+
 
 type AuthContextType = {
   currentUser: User | null;
